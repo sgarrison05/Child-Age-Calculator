@@ -12,11 +12,11 @@
 
         If Month(dteBirthdate) > Month(dteToday) Then
 
-            childage = childage - 1
+            childage -= 1
 
         ElseIf Month(dteBirthdate) = Month(dteToday) And DatePart(DateInterval.Day, dteBirthdate) > DatePart(DateInterval.Day, dteToday) Then
 
-            childage = childage - 1
+            childage -= 1
 
         End If
 
