@@ -21,6 +21,7 @@
         End If
 
         lblageOutput.Text = Convert.ToString(childage)
+
         If childage > 18 Then
             Me.lblageOutput.ForeColor = Color.Red
         Else
