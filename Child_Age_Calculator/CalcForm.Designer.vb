@@ -82,6 +82,7 @@ Partial Class frmchildCalculator
         '
         'btnExit
         '
+        Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.Location = New System.Drawing.Point(238, 206)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
@@ -109,8 +110,10 @@ Partial Class frmchildCalculator
         '
         'frmchildCalculator
         '
+        Me.AcceptButton = Me.btnCalc
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(357, 260)
         Me.Controls.Add(Me.lblstatement)
         Me.Controls.Add(Me.lblInfo)
