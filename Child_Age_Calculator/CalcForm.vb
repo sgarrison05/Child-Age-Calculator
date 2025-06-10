@@ -7,14 +7,14 @@
         Dim dteToday As Date = Date.Today
         Dim childage As Integer
 
-
         childage = CType(DateDiff(DateInterval.Year, dteBirthdate, dteToday), Integer)
 
         If Month(dteBirthdate) > Month(dteToday) Then
 
             childage -= 1
 
-        ElseIf Month(dteBirthdate) = Month(dteToday) And DatePart(DateInterval.Day, dteBirthdate) > DatePart(DateInterval.Day, dteToday) Then
+        ElseIf Month(dteBirthdate) = Month(dteToday) And DatePart(DateInterval.Day,
+               dteBirthdate) > DatePart(DateInterval.Day, dteToday) Then
 
             childage -= 1
 
@@ -22,7 +22,7 @@
 
         lblageOutput.Text = Convert.ToString(childage)
 
-        If childage > 18 Then
+        If childage >= 17 Then
             Me.lblageOutput.ForeColor = Color.Red
         Else
             Me.lblageOutput.ForeColor = Color.Blue
@@ -37,8 +37,6 @@
         dtpchildDOB.Text = Date.Today
         lblageOutput.Text = ""
         dtpchildDOB.Focus()
-
-
 
     End Sub
 

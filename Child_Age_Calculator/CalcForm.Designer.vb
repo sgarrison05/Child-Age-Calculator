@@ -55,10 +55,10 @@ Partial Class frmchildCalculator
         'lblageOutput
         '
         Me.lblageOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblageOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblageOutput.Location = New System.Drawing.Point(129, 107)
+        Me.lblageOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblageOutput.Location = New System.Drawing.Point(153, 108)
         Me.lblageOutput.Name = "lblageOutput"
-        Me.lblageOutput.Size = New System.Drawing.Size(41, 33)
+        Me.lblageOutput.Size = New System.Drawing.Size(50, 33)
         Me.lblageOutput.TabIndex = 2
         Me.lblageOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -91,19 +91,19 @@ Partial Class frmchildCalculator
         '
         'lblInfo
         '
-        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInfo.Location = New System.Drawing.Point(38, 113)
+        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfo.Location = New System.Drawing.Point(12, 113)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(85, 23)
+        Me.lblInfo.Size = New System.Drawing.Size(135, 27)
         Me.lblInfo.TabIndex = 6
         Me.lblInfo.Text = "This child is"
         '
         'lblstatement
         '
-        Me.lblstatement.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblstatement.Location = New System.Drawing.Point(176, 113)
+        Me.lblstatement.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstatement.Location = New System.Drawing.Point(221, 113)
         Me.lblstatement.Name = "lblstatement"
-        Me.lblstatement.Size = New System.Drawing.Size(71, 23)
+        Me.lblstatement.Size = New System.Drawing.Size(104, 23)
         Me.lblstatement.TabIndex = 7
         Me.lblstatement.Text = "years old"
         '
