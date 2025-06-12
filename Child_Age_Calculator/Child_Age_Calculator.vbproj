@@ -30,7 +30,7 @@
     <InstallUrl>http://10.2.30.100/users/Shon/Applications/Child Age Calculator/</InstallUrl>
     <ProductName>Child Age Calculator</ProductName>
     <PublisherName>Shon Garrison</PublisherName>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -77,7 +77,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>AC1C3070B9D052EAE2D0ECCC17B6D544975F96E2</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>4528B372757E8AD5E6ED370206A2B33A4B78786F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Child_Age_Calculator_TemporaryKey.pfx</ManifestKeyFile>
@@ -89,7 +89,7 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
