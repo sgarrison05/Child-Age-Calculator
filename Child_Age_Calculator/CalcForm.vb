@@ -1,40 +1,28 @@
 ﻿Public Class frmchildCalculator
 
-
     Private Sub btnCalc_Click(sender As System.Object, e As System.EventArgs) Handles btnCalc.Click
 
-        Dim dteBirthdate As Date = dtpchildDOB.Text
+        Dim dteBirthdate As Date = dtpchildDOB.Value
         Dim dteToday As Date = Date.Today
         Dim childage As Integer
 
-        childage = CType(DateDiff(DateInterval.Year, dteBirthdate, dteToday), Integer)
+        childage = dteToday.Year - dteBirthdate.Year
 
-        If Month(dteBirthdate) > Month(dteToday) Then
-
-            childage -= 1
-
-        ElseIf Month(dteBirthdate) = Month(dteToday) And DatePart(DateInterval.Day,
-               dteBirthdate) > DatePart(DateInterval.Day, dteToday) Then
+        If dteBirthdate.Date > dteToday.AddYears(-childage) Then
 
             childage -= 1
 
         End If
 
-        lblageOutput.Text = Convert.ToString(childage)
+        lblageOutput.Text = childage.ToString
 
-        If childage >= 17 Then
-            Me.lblageOutput.ForeColor = Color.Red
-        Else
-            Me.lblageOutput.ForeColor = Color.Blue
-
-        End If
-
+        lblageOutput.ForeColor = If(childage >= 17, Color.Red, Color.Blue)
 
     End Sub
 
     Private Sub btnClear_Click(sender As System.Object, e As System.EventArgs) Handles btnClear.Click
 
-        dtpchildDOB.Text = Date.Today
+        dtpchildDOB.Value = Date.Today
         lblageOutput.Text = ""
         dtpchildDOB.Focus()
 
