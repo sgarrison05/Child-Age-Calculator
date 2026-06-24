@@ -7,6 +7,9 @@
 *.userosscache
 *.sln.docstates
 
+# specific folders
+.github/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -78,6 +81,7 @@ ipch/
 *.psess
 *.vsp
 *.vspx
+
 
 # TFS 2012 Local Workspace
 $tf/
